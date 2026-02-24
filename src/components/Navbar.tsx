@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="font-display text-2xl font-bold gradient-text">
-          Dilisha ✨
+          Dilisha 
         </a>
 
         {/* Desktop Nav */}
@@ -44,7 +44,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary-gradient px-5 py-2.5 rounded-full font-body text-sm font-medium">
+          <a href="#contact" className="glass-card px-5 py-1 rounded-full font-body font-medium text-lg inline-flex items-center gap-2 text-foreground hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
             Let's Talk
           </a>
         </nav>

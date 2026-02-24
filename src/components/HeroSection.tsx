@@ -10,10 +10,9 @@ const subtitles = [
 ];
 
 const socials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Instagram, href: "https://www.instagram.com/simply_dilisha/", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/Dilisha-arya/", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/SimplyDilisha", label: "GitHub" },
 ];
 
 const HeroSection = () => {
@@ -58,14 +57,27 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-          >
-            Welcome to my world
+              >
+                <span
+                  style={{
+                    background: "linear-gradient(90deg, #120114 0%, #39033b 00%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                    color: "transparent",
+                    fontWeight: 900,
+                    fontSize: "2rem",
+                    letterSpacing: "0.05em"
+                  }}
+                >
+                  Welcome to my Cute world
+                </span>
           </motion.p>
 
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
-            Hi, I'm{" "}
-            <span className="gradient-text">Dilisha</span>{" "}
-            <span className="inline-block animate-float">✨</span>
+            Hi, I'm Dilisha{" "}
+            <span className="gradient-text"></span>{" "}
+            <span className="inline-block animate-float">💻</span>
           </h1>
 
           <motion.p
@@ -79,7 +91,16 @@ const HeroSection = () => {
 
           {/* Typing subtitle */}
           <div className="h-8 mb-10">
-            <span className="font-body text-muted-foreground text-lg">
+            <span
+              className="font-body text-lg"
+              style={{
+                background: "linear-gradient(90deg, #540505 0%, #4d1404 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                color: "transparent"
+              }}
+            >
               {displayText}
               <span className="inline-block w-0.5 h-5 bg-primary ml-1 animate-pulse" />
             </span>
@@ -92,7 +113,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <a href="#contact" className="btn-primary-gradient px-8 py-4 rounded-full font-body font-medium text-lg inline-flex items-center gap-2">
+            <a href="#contact" className="glass-card px-8 py-4 rounded-full font-body font-medium text-lg inline-flex items-center gap-2 text-foreground hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
               💌 Hire Me
             </a>
             <a
@@ -124,17 +145,6 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 rounded-full border-2 border-foreground/30 flex justify-center pt-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-        </div>
-      </motion.div>
     </section>
   );
 };
