@@ -1,12 +1,13 @@
+import skillsBg from "@/assets/SkillsBg.jpg";
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Design", level: 92, color: "340, 65%, 65%" },
-  { name: "Frontend", level: 88, color: "270, 50%, 70%" },
-  { name: "Figma", level: 95, color: "20, 80%, 75%" },
-  { name: "Branding", level: 85, color: "350, 50%, 70%" },
-  { name: "Motion", level: 80, color: "340, 80%, 80%" },
-  { name: "Research", level: 78, color: "270, 40%, 75%" },
+  { name: "Python", level: 92, color: "340, 65%, 65%" },
+  { name: "HTML", level: 88, color: "270, 50%, 70%" },
+  { name: "CSS", level: 95, color: "20, 80%, 75%" },
+  { name: "Canva/Figma", level: 85, color: "350, 50%, 70%" },
+  { name: "Matplotlib", level: 80, color: "340, 80%, 80%" },
+  { name: "Content", level: 78, color: "270, 40%, 75%" },
 ];
 
 const CircularProgress = ({ name, level, color, delay }: { name: string; level: number; color: string; delay: number }) => {
@@ -54,8 +55,9 @@ const CircularProgress = ({ name, level, color, delay }: { name: string; level: 
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-padding relative">
-      <div className="max-w-5xl mx-auto">
+    <section id="skills" className="section-padding relative" style={{ position: 'relative' }}>
+      <img src={skillsBg} alt="Skills Background" style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none'}} />
+      <div className="max-w-5xl mx-auto relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}

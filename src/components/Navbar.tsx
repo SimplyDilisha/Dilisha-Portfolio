@@ -6,7 +6,6 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -65,7 +64,7 @@ const Navbar = () => {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            className="md:hidden glass-card-solid mx-4 mt-3 rounded-2xl p-6"
+            className="md:hidden glass-card-solid mx-4 mt-3 rounded-2xl p-6 flex flex-col items-center"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -74,7 +73,7 @@ const Navbar = () => {
               <a
                 key={l.label}
                 href={l.href}
-                className="block font-body text-lg py-3 text-foreground/80 hover:text-primary transition-colors"
+                className="block font-body text-lg py-3 text-foreground/80 hover:text-primary transition-colors text-center"
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}

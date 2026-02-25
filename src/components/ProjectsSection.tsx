@@ -1,3 +1,4 @@
+import projectsBg from "@/assets/ProjectsBg.jpg";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
@@ -38,8 +39,9 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-padding relative bg-blush/30">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="section-padding relative" style={{ position: 'relative' }}>
+      <img src={projectsBg} alt="Projects Background" style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none'}} />
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}

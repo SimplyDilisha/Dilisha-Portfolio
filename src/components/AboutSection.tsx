@@ -1,25 +1,27 @@
+import aboutBg from "@/assets/AboutBg.jpg";
 import { motion } from "framer-motion";
 import { Sparkles, Heart, Palette, Eye } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 const traits = [
-  { icon: Sparkles, label: "Creative", desc: "Bringing ideas to life" },
-  { icon: Heart, label: "Passionate", desc: "Love what I do" },
-  { icon: Palette, label: "Detail-Oriented", desc: "Pixel perfection" },
-  { icon: Eye, label: "Ambitious", desc: "Always growing" },
+  { emoji: "💫", label: "Creative", desc: "Bringing ideas to life" },
+  { emoji: "❤️", label: "Passionate", desc: "Love what I do" },
+  { emoji: "🎨", label: "Adaptable", desc: "Pixel perfection" },
+  { emoji: "👁️", label: "Ambitious", desc: "Always growing" },
 ];
 
 const skills = [
-  { name: "UI/UX Design", level: 92 },
-  { name: "React & TypeScript", level: 88 },
-  { name: "Figma & Adobe Suite", level: 95 },
-  { name: "Branding & Identity", level: 85 },
+  { name: "Content Writer", level: 92 },
+  { name: "Frontend Development", level: 88 },
+  { name: "Figma & Canva", level: 95 },
+  { name: "Anchor", level: 85 },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="section-padding relative" style={{ position: 'relative' }}>
+      <img src={aboutBg} alt="About Background" style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none'}} />
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -57,9 +59,7 @@ const AboutSection = () => {
             transition={{ duration: 0.7 }}
           >
             <p className="font-body text-foreground/80 leading-relaxed mb-8 text-lg">
-              I'm a creative designer and developer who loves transforming ideas into stunning
-              digital experiences. With a keen eye for aesthetics and a passion for clean code,
-              I bridge the gap between beautiful design and functional technology.
+              Hey! I’m Dilisha — a curious and driven CSE Core student who loves understanding how technology works behind the scenes. I enjoy working on strengthening my programming fundamentals. My goal is to become a skilled software developer and create impactful solutions that make a difference.
             </p>
 
             {/* Traits */}
@@ -74,8 +74,8 @@ const AboutSection = () => {
                   transition={{ delay: i * 0.1 + 0.3 }}
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 >
-                  <div className="w-10 h-10 rounded-xl bg-blush flex items-center justify-center">
-                    <t.icon size={18} className="text-primary" />
+                  <div className="w-10 h-10 flex items-center justify-center text-3xl">
+                    {t.emoji}
                   </div>
                   <div>
                     <p className="font-body font-semibold text-sm">{t.label}</p>
