@@ -77,7 +77,7 @@ const HeroSection = () => {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
             Hi, I'm Dilisha{" "}
             <span className="gradient-text"></span>{" "}
-            <span className="inline-block animate-float">💻</span>
+            <span className="inline-block animate-float"></span>
           </h1>
 
           <motion.p
@@ -113,8 +113,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <a href="#contact" className="glass-card px-8 py-4 rounded-full font-body font-medium text-lg inline-flex items-center gap-2 text-foreground hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
-              💌 Hire Me
+            <a href="#about" className="glass-card px-8 py-4 rounded-full font-body font-medium text-lg inline-flex items-center gap-2 text-foreground hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+              💌 About Me
             </a>
             <a
               href="#projects"

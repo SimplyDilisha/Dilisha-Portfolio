@@ -1,3 +1,20 @@
+@layer components {
+  .brand-box {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border-radius: 2em;
+    background: transparent;
+    border: 2.5px solid #200837;
+    box-shadow: 0 0 8px 1px #a855f733;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    border-shadow: 0 0 8px 1px #a855f733;
+  }
+  .brand-box:hover {
+    box-shadow: 0 4px 32px 0 #a855f766, 0 0 0 6px #a855f722;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -48,7 +65,7 @@
     --glass-shadow: 340 60% 70% / 0.15;
 
     --gradient-hero: linear-gradient(135deg, hsl(340 80% 92%), hsl(270 50% 90%), hsl(20 80% 90%));
-    --gradient-primary: linear-gradient(135deg, hsl(340 65% 65%), hsl(270 50% 70%));
+    --gradient-primary: linear-gradient(135deg, hsl(211, 89%, 24%), hsl(269, 95%, 14%));
     --gradient-accent: linear-gradient(135deg, hsl(20 80% 80%), hsl(340 70% 80%));
     --gradient-skill: linear-gradient(90deg, hsl(340 65% 65%), hsl(270 50% 70%), hsl(20 80% 80%));
 

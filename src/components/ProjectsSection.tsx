@@ -7,31 +7,31 @@ import project4 from "@/assets/project-4.jpg";
 
 const projects = [
   {
-    title: "Bloom – Portfolio Website",
-    desc: "A dreamy personal portfolio with pastel aesthetics and smooth animations.",
+    title: "Dilisha – Portfolio Website",
+    desc: "A Personal Portfolio",
     image: project1,
     tags: ["Web Design", "React"],
     tall: false,
   },
   {
-    title: "Aura – Mobile App",
-    desc: "Wellness & meditation app with a calming lavender interface.",
+    title: "Nova Care",
+    desc: "AI Medical Chatbot ",
     image: project2,
-    tags: ["UI/UX", "Mobile"],
+    tags: ["UI/UX", "Mobile", "API", "Frontend"],
     tall: true,
   },
   {
-    title: "Petal – Brand Identity",
-    desc: "Complete brand identity for an artisan flower boutique.",
+    title: "AI Safar Sathi",
+    desc: "AI Travel Planning App",
     image: project3,
-    tags: ["Branding", "Design"],
+    tags: ["Branding", "Design", "React", "Artificial Intelligence", "API"],
     tall: false,
   },
   {
-    title: "Canvas – Creative Studio",
-    desc: "Digital art exploration with watercolor-inspired visuals.",
+    title: "Fashion Club Website",
+    desc: "Sample project for a fashion club website, showcasing design and development skills.",
     image: project4,
-    tags: ["Illustration", "Art"],
+    tags: ["Illustration", "Art", "HTML", "CSS", "UI/UX"],
     tall: true,
   },
 ];

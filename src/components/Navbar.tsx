@@ -29,8 +29,10 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl font-bold gradient-text">
-          Dilisha 
+        <a href="#" className="font-display text-2xl font-bold gradient-text glow-text">
+          <span className="brand-box" style={{ fontWeight: 1000, letterSpacing: '0.04em' }}>
+            <strong style={{ fontWeight: 1000 }}>DILISHA</strong>
+          </span>
         </a>
 
         {/* Desktop Nav */}
