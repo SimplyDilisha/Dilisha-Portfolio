@@ -11,7 +11,7 @@ const traits = [
 ];
 
 const skills = [
-  { name: "Content Writer", level: 92 },
+  { name: "Content Writing", level: 92 },
   { name: "Frontend Development", level: 88 },
   { name: "Figma & Canva", level: 95 },
   { name: "Anchor", level: 85 },
